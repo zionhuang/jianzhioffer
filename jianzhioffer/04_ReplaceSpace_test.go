@@ -33,3 +33,7 @@ func replace(str string) (res string) {
 	}
 	return string(byteArr)
 }
+
+/*
+题意：把字符串中的空格用"%20"来代替，这一题考察的是
+*/
