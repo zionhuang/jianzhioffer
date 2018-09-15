@@ -22,8 +22,16 @@ func buildList(arr []int) *NodeList {
 // 打印链表
 func printList(head *NodeList) {
 	cur := head
+	res := ""
+	flag := 1
 	for cur != nil {
-		fmt.Println(cur.Val)
+		if flag == 1 {
+			res += fmt.Sprintf("%v", cur.Val)
+		} else {
+			res += fmt.Sprintf("->%v", cur.Val)
+		}
+		flag++
 		cur = cur.Next
 	}
+	fmt.Println(res)
 }
